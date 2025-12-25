@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Muhammad Hanif | Self-Taught Frontend Web Developer">
+<title>Muhammad Hanif | Ultimate Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0b0f14;
+  --card:#121824;
+  --accent:#00ff99;
+  --text:#eaeaea;
+  --muted:#9aa4b2;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text)}
+
+section{padding:100px 60px}
+h2{font-size:38px;margin-bottom:15px}
+.sub{color:var(--muted);max-width:650px}
+
+/* NAVBAR */
+nav{
+  position:fixed;top:0;width:100%;
+  display:flex;justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(11,15,20,.8);
+  backdrop-filter:blur(12px);
+  z-index:1000;
+}
+nav a{color:var(--muted);text-decoration:none;margin-left:22px}
+nav a:hover{color:var(--accent)}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:120px 60px;
+}
+.hero h1{font-size:54px}
+.hero span{color:var(--accent)}
+.hero p{max-width:540px;color:var(--muted);margin:18px 0}
+.btn{
+  display:inline-block;
+  padding:14px 34px;
+  background:var(--accent);
+  color:#000;
+  border-radius:40px;
+  font-weight:600;
+  text-decoration:none;
+  transition:.3s;
+}
+.btn:hover{transform:scale(1.08);box-shadow:0 0 25px var(--accent)}
+
+/* GRIDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:28px;
+  margin-top:40px;
+}
+.card{
+  background:var(--card);
+  padding:28px;
+  border-radius:18px;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-14px);
+  box-shadow:0 25px 45px rgba(0,255,153,.15);
+}
+
+/* SKILLS */
+.bar{
+  background:#0f1522;
+  border-radius:20px;
+  overflow:hidden;
+  margin-top:10px;
+}
+.fill{
+  height:10px;
+  background:var(--accent);
+}
+
+/* TIMELINE */
+.timeline{
+  border-left:2px solid var(--accent);
+  padding-left:30px;
+}
+.step{margin-bottom:30px}
+
+/* FORM */
+form{
+  max-width:480px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+input,textarea{
+  background:#0f1522;
+  border:1px solid #1f2937;
+  padding:14px;
+  border-radius:10px;
+  color:#fff;
+}
+input:focus,textarea:focus{
+  border-color:var(--accent);
+  outline:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px;
+  color:var(--muted);
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:25px;right:25px;
+  background:#25d366;
+  padding:16px;
+  border-radius:50%;
+  color:#fff;
+  font-size:26px;
+  text-decoration:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav{padding:20px}
+  section,.hero{padding:100px 20px}
+  .hero h1{font-size:36px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <b>Hanif.</b>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#journey">Journey</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <h1>Building Skills,<br><span>Not Excuses.</span></h1>
+    <p>
+      Muhammad Hanif — self-taught frontend developer focused on clean UI,
+      responsiveness and consistency.
+    </p>
+    <a href="#projects" class="btn">Explore Work</a>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p class="sub">
+    I come from practice, not privilege. Learning web development through PITP,
+    hands-on projects and daily improvement.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">HTML<div class="bar"><div class="fill" style="width:90%"></div></div></div>
+    <div class="card">CSS<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+    <div class="card">JavaScript<div class="bar"><div class="fill" style="width:70%"></div></div></div>
+    <div class="card">Bootstrap<div class="bar"><div class="fill" style="width:80%"></div></div></div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">Responsive Websites</div>
+    <div class="card">Landing Pages</div>
+    <div class="card">UI Fixes & Redesign</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">Portfolio Website</div>
+    <div class="card">Business Landing Page</div>
+    <div class="card">Practice Web Apps</div>
+  </div>
+</section>
+
+<section id="journey">
+  <h2>Learning Journey</h2>
+  <div class="timeline">
+    <div class="step">Started with HTML & CSS</div>
+    <div class="step">Joined PITP Program</div>
+    <div class="step">Building Real Projects</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form>
+    <input placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="5" placeholder="Message"></textarea>
+    <button class="btn">Send</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Muhammad Hanif — Growth Mode Always 🚀
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923377277924" target="_blank">🟢</a>
+
+</body>
+</html>

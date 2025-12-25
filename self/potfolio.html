@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Hanif | Frontend Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0b0f14;
+  --card:#121824;
+  --accent:#00ff99;
+  --text:#eaeaea;
+  --muted:#9aa4b2;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:var(--bg);color:var(--text);scroll-behavior:smooth}
+
+/* ===== Navbar ===== */
+nav{
+  position:fixed;top:0;width:100%;
+  display:flex;justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(11,15,20,.85);
+  backdrop-filter:blur(10px);
+  z-index:100;
+}
+nav a{color:var(--muted);text-decoration:none;margin-left:25px}
+nav a:hover{color:var(--accent)}
+
+/* ===== Hero ===== */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:120px 60px;
+}
+.hero h1{font-size:52px}
+.hero span{color:var(--accent)}
+.hero p{max-width:520px;color:var(--muted);margin:20px 0}
+.btn{
+  display:inline-block;
+  padding:14px 34px;
+  background:var(--accent);
+  color:#000;
+  border-radius:40px;
+  font-weight:600;
+  text-decoration:none;
+  transition:.3s;
+}
+.btn:hover{transform:scale(1.08);box-shadow:0 0 25px var(--accent)}
+
+/* ===== Sections ===== */
+section{padding:100px 60px}
+h2{font-size:36px;margin-bottom:20px}
+.sub{color:var(--muted);max-width:600px}
+
+/* ===== Skills ===== */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+.skill{
+  background:var(--card);
+  padding:25px;
+  border-radius:16px;
+  transition:.3s;
+}
+.skill:hover{
+  transform:translateY(-12px);
+  box-shadow:0 20px 40px rgba(0,255,153,.15);
+}
+.skill b{color:var(--accent)}
+
+/* ===== Projects ===== */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+.project{
+  background:linear-gradient(145deg,#121824,#0b0f14);
+  padding:30px;
+  border-radius:18px;
+  transition:.3s;
+}
+.project:hover{
+  transform:translateY(-15px) scale(1.03);
+  box-shadow:0 25px 50px rgba(0,0,0,.5);
+}
+.project span{color:var(--accent);font-size:14px}
+
+/* ===== Contact ===== */
+form{
+  max-width:480px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+input,textarea{
+  background:#0f1522;
+  border:1px solid #1f2937;
+  padding:14px;
+  border-radius:10px;
+  color:#fff;
+}
+input:focus,textarea:focus{
+  border-color:var(--accent);
+  outline:none;
+}
+
+/* ===== Footer ===== */
+footer{
+  text-align:center;
+  padding:40px;
+  color:var(--muted);
+}
+
+/* ===== WhatsApp ===== */
+.whatsapp{
+  position:fixed;
+  bottom:25px;right:25px;
+  background:#25d366;
+  padding:16px;
+  border-radius:50%;
+  color:#fff;
+  font-size:26px;
+  text-decoration:none;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+  nav{padding:20px}
+  .hero,section{padding:100px 20px}
+  .hero h1{font-size:36px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <b>Hanif.</b>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <h1>Self-Taught <br><span>Frontend Developer</span></h1>
+    <p>
+      I’m Muhammad Hanif — learning, building and improving every day.
+      Focused on clean UI, responsiveness and real-world projects.
+    </p>
+    <a href="#projects" class="btn">See My Work</a>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p class="sub">
+    I don’t come from a traditional background — I come from practice.
+    Learning through PITP, real projects and consistency.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill"><b>HTML5</b><br>Semantic & SEO-friendly</div>
+    <div class="skill"><b>CSS3</b><br>Flexbox, Grid, Animations</div>
+    <div class="skill"><b>JavaScript</b><br>DOM, Logic, Basics</div>
+    <div class="skill"><b>Bootstrap</b><br>Responsive layouts</div>
+    <div class="skill"><b>Git & GitHub</b><br>Version control</div>
+    <div class="skill"><b>UI Thinking</b><br>User-first design</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <span>HTML • CSS</span>
+      <h3>Portfolio Website</h3>
+      <p>Clean responsive personal portfolio.</p>
+    </div>
+    <div class="project">
+      <span>Bootstrap</span>
+      <h3>Business Landing Page</h3>
+      <p>Modern layout with components.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form>
+    <input placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Muhammad Hanif — Built with consistency 💚
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923377277924" target="_blank">🟢</a>
+
+</body>
+</html>
