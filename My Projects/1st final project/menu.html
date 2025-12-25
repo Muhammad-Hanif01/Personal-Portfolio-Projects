@@ -1,0 +1,319 @@
+<html lang="en">
+	<head>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet"/>
+		
+		<title>Menu</title>
+	</head>
+	<body>
+	
+		<nav class="navbar navbar-expand-lg navbar-light bgnav">
+			<div class="container-fluid">
+				<img src="pic/logo.png" class="ms-4" width="100px" alt=""/>
+				<a class="navbar-brand" href="#"><b>Eat & Treat</b></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item px-3">
+							<a class="nav-link" aria-current="page" href="home.html">Home</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="about us.html">About us</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link active" href="menu.html">Menu</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="contact with us.html">Contact with us</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="visit us.html">Visit us</a>
+						</li>
+						
+					</ul>
+						
+						<div class="ms-auto d-flex me-4">
+							<button class="btn btn-butcustum2 me-3"  data-bs-toggle="modal" data-bs-target="#loginmodal" ><i class="bi bi-person pe-2"></i>Log in</button>
+							<button class="btn btn-butcustum px-4" data-bs-toggle="modal" data-bs-target="#signupmodal0" >Order Now</button>
+							
+							<div class="dropdown">
+								<button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									En
+								</button>
+							</div>
+						</div>	
+				</div>
+			</div>
+		</nav>
+		
+		
+		<div class="allmodals">
+			<div class="modal fade" id="loginmodal" tabindex="-1" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<div class="align-item-center">
+								<h3 class="modal-title text-center">L<img alt="" class="" style="width:40px;" src="data:image/jpeg;base64,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"  />gin</h3>
+							</div>
+							<button class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="mb-3">
+									<label class="pb-2">Email address</label></br>
+									<input type="email" class="py-1 " style="width:100%;"/>
+								</div>
+								
+								<div class="mb-3">
+									<label>Password</label></br>
+									<input type="password" class="py-1 mb-0" style="width:100%;"/>
+								</div>
+									</br>	
+								<input type="checkbox" class=""/> Remember me
+							
+							</form>
+						</div>
+						
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-butcustum w-100 mt-3" data-bs-dismiss="modal" >Log In</button>
+								
+								
+						</div>
+							<div class="text-center">
+								<p class="mt-3">Don't have an account? <a href="#" class="text-decoration-none">Sign Up</a></p>
+							</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="modal fade" id="signupmodal0" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title" id="signupModalLabel">Sign up</h3>
+							<button class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="mb-3">
+									<label class="pb-2">Enter your Name:</label></br>
+									<input type="text" class="py-1 " style="width:100%;"/>
+								</div>
+								<div class="mb-3">
+									<label class="pb-2">Enter your Email:</label></br>
+									<input type="email" class="py-1 " style="width:100%;"/>
+								</div>
+								<div class="mb-3">
+									<label class="pb-2">Enter your Password:</label></br>
+									<input type="password" class="py-1 " style="width:100%;"/>
+								</div>
+								<div class="mb-3">
+									<label class="pb-2">Conform your Password:</label></br>
+									<input type="password" class="py-1 " style="width:100%;"/>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-butcustum w-100 my-3 " data-bs-dismiss="modal">Sign up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	
+		<div class="container-fluid">
+			<div class="menupage1">
+				<div class="row m-0">
+					<div class="col-lg-3 col-md-3 d-flex flex-column justify-content-center align-items-center" >
+						<h1>On the Menu</h1>
+						<button class="bg-dark text-white p-1 mt-2">VIEW FULL MENU</button>
+					</div>
+					
+					<div class="col-lg-3 col-md-3 col-sm-6 mt-5">
+						<div class="card">
+							<img src="pic/burger.jpg"  alt="" class="menuimg" />
+							<div class="card-body text-center">
+								<h5>Guarmet Burgers</h5>
+								<small>packed with flavor and <br class="hide01"/>cooked to perfection</small>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-3 col-sm-6 mt-5" >
+						<div class="card">
+							<img src="pic/chicken.jpg"  alt="" class="menuimg" />
+							<div class="card-body text-center">
+								<h5>Chicken Wings</h5>
+								<small>Pair with dipping sauces <br class="hide01"/>that are t good to pass up</small>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-3 col-sm-6 mt-5 hide0">
+						<div class="card">
+							<img src="pic/thirst.jpg"  alt="" class="menuimg" />
+							<div class="card-body text-center">
+								<h5>Thirst Quenchers</h5>
+								<small>packed with flavor and <br class="hide01"/>cooked to perfection</small>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="menupage2">
+				<div class="row  mx-5">
+					<div class="col-lg-3 col-md-3 col-sm-6 mt-5" >
+						<div class="card">
+							<img src="pic/salad.jpg"  alt="" class="menuimg" />
+							<div class="card-body text-center" style="background-color:#ffd230;">
+								<h5>Salad Wraps</h5>
+								<small>A healthy, flavorful choice, <br class="hide01"/>wrapped in freshness</small>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-3 col-sm-6 mt-5">
+						<div class="card">
+							<img src="pic/pasta.jpg"  alt="" class="menuimg" />
+							<div class="card-body text-center" style="background-color:#ffd230;">
+								<h5>Pastan Classics</h5>
+								<small>Bold flavors meet perfectly  <br class="hide01"/>al dente pasta</small>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-3 col-sm-6 mt-5">
+						<div class="card">
+							<img src="pic/pizza.jpg"  alt="" class="menuimg" />
+							<div class="card-body text-center" style="background-color:#ffd230;">
+								<h5>Pizza Bestsellers</h5>
+								<small>Big on flavors with that perfect<br class="hide01"/>cheesy stretch and crispy crust</small>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-3 col-sm-6 mt-5">
+						<div class="card">
+							<img src="pic/deserts.jpg"  alt="" class="menuimg" />
+							<div class="card-body text-center" style="background-color:#ffd230;">
+								<h5>Desserts</h5>
+								<small>Pick from old-school treats and <br class="hide01"/>fun new flavors</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="contactpage d-flex justify-content-center" >
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-lg-6 text-white pt-5 mt-5">
+								<h1 class="display-5 fw-bold pe-4 me-5" >Eat &<br/> Treat</h1>
+								<p>Enterpreneur, Stylish, Speaker</p>
+								<div class="contact-icons mt-5 pe-5 me-5" style="font-size:20px;" >
+									<i class="bi bi-instagram px-2"></i>
+									<i class="bi bi-facebook px-2 "></i>
+									<i class="bi bi-twitter px-2  me-2"></i>
+								</div>
+								<p class="pt-5 pe-5 me-5"> Contact With Us<p/>
+								<p class="pe-3"><i class="bi bi-envelope"></i>  Email: info@example.com</p>
+								<p class="pe-3"><i class="bi bi-telephone "></i>  Phone: +92 300 1234567</p>
+							
+						</div>
+						
+						<div class="col-lg-6 mt-5 p-5 ">
+							<form class="text-white">
+							
+								<div class="mb-3">
+									<label class="pb-2 pe-5 me-3">Enter Your Name:</label></br>
+									<input type="text" class="form0 py-1 " placeholder="Enter Your Name" style="width:50%;"/>
+								</div>
+								
+								<div class="mb-3">
+									<label class="pb-2 pe-5 me-5 ">Email address</label></br>
+									<input type="email" class="form0 py-1 "placeholder="Enter Your Email" style="width:50%;"/>
+								</div>
+								
+								<div class="mb-3">
+									<label class="pb-2 pe-5 me-2">Enter your Message:</label></br>
+									<textarea  class="form0 py-3 " style="width:50%;"placeholder="Enter Your Message..."></textarea>
+								</div>
+								<div class="">
+									<button class="btn btn-customsub py-2 px-4">Submit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="contactpage d-flex justify-content-center" >
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-lg-6 text-white pt-5 mt-5">
+								<h1 class="display-5 fw-bold pe-4 me-5" >Eat &<br/> Treat</h1>
+								<p>Enterpreneur, Stylish, Speaker</p>
+								<div class="contact-icons mt-5 pe-5 me-5" style="font-size:20px;" >
+									<i class="bi bi-instagram px-2"></i>
+									<i class="bi bi-facebook px-2 "></i>
+									<i class="bi bi-twitter px-2  me-2"></i>
+								</div>
+								<p class="pt-5 pe-5 me-5"> Contact With Us<p/>
+								<p class="pe-3"><i class="bi bi-envelope"></i>  Email: info@example.com</p>
+								<p class="pe-3"><i class="bi bi-telephone "></i>  Phone: +92 300 1234567</p>
+							
+						</div>
+						
+						<div class="col-lg-6 mt-5 p-5 ">
+							<form class="text-white">
+							
+								<div class="mb-3">
+									<label class="pb-2 pe-5 me-3">Enter Your Name:</label></br>
+									<input type="text" class="form0 py-1 " placeholder="Enter Your Name" style="width:50%;"/>
+								</div>
+								
+								<div class="mb-3">
+									<label class="pb-2 pe-5 me-5 ">Email address</label></br>
+									<input type="email" class="form0 py-1 "placeholder="Enter Your Email" style="width:50%;"/>
+								</div>
+								
+								<div class="mb-3">
+									<label class="pb-2 pe-5 me-2">Enter your Message:</label></br>
+									<textarea  class="form0 py-3 " style="width:50%;"placeholder="Enter Your Message..."></textarea>
+								</div>
+								<div class="">
+									<button class="btn btn-customsub py-2 px-4">Submit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+    
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	</body>
+</html>

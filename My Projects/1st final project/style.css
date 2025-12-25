@@ -1,0 +1,257 @@
+.bgnav{
+	background-color:#d3dedb !important;
+}
+
+.btn-butcustum{
+	background-color:#6c9286 !important;
+	border-radius: 50px;
+	color:white;
+}
+
+.btn-butcustum2{
+	background-color:white !important;
+	border-radius: 50px;
+	color:#6c9286;
+}
+
+.btn-butcustum2{
+	background-color:white !important;
+	border-radius: 50px;
+	color:black;
+}
+
+.btn-customsub{
+	background-color:red !important;
+	border-radius: 50px;
+	color:White;
+}
+
+
+.container-fluid{
+	padding:0px;
+	margin:0px;
+}
+
+
+
+.nav-link{
+	position:relative;
+	transition:0.3s;
+}
+
+
+.nav-link::after{
+	content:"";
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:0px;
+	height:2px;
+	background:black;
+	transition:0.3s;
+}
+
+
+.nav-link:hover{
+	color:black;
+}
+
+
+.nav-link:hover::after{
+	width:100%;
+}
+
+.homepage0 {
+	background-image: url("pic/Home.png");
+	width:100%;
+	height:83vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.homepage0 h1 {
+    font-family:Stratford-Serial-ExtraBold;
+	font-weight:bold;
+}
+
+
+
+.contactpage{
+	width:100%;
+	height:100vh;
+	background-image: url("pic/burgerbackground.png");
+	background-size: cover;       /* poora area fill kare */
+	background-position: center;  /* center me rakhe */
+	background-repeat: no-repeat;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.menuimg{
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+.card{
+	background-color:#ffd230;
+	border:0px;	
+	
+}
+
+.card:hover{
+	cursor:pointer;
+	box-shadow:5px 5px 15px black;
+}
+
+.card-body{
+	background-color:white;
+	border-bottom-right-radius:7px;
+	border-bottom-left-radius:7px;
+}
+
+
+
+.menupage1{
+	height:100vh;
+	width:100%;
+	background-color:#ffd230;
+}
+
+.menupage1 .card{
+	width: 230px;
+}
+
+.menupage2{
+	height:100vh;
+	width:100%;
+}
+
+.menupage2 .card{
+	width: 230px;
+}
+
+#grouppic{
+	border-top-right-radius:40px;
+	border-top-left-radius:40px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+}
+
+.aboutpage1 .row {
+  display: flex;
+  align-items: center;
+}
+
+.aboutbox i{
+	font-size:30px;
+}
+
+
+.aboutpage2 .row {
+  display: flex;
+  align-items: center;
+}
+
+.browncolor{
+	color:#ac6508;
+}
+.font2{
+	font-family:Cooper BT Std Bold;
+}
+
+#aboutlastpic{
+	border-radius:20px;
+}
+
+#aboutlastpic:hover{
+	box-shadow: 5px 5px 15px;
+	cursor:pointer;
+}
+
+.form0{
+	border-radius:6px;
+	box-shadow:0px 0px 3px ;
+}
+
+
+
+.visitpage1{
+	height:83vh;
+	width:100%;
+	background-color:#ffd230;
+}
+
+
+
+
+
+
+.visittext{
+	text-align:center;
+}
+
+.visittext h1 {
+	font-family:Stratford-Serial-ExtraBold;
+	font-weight:bold;
+}
+
+.visittext h4{
+	font-family:Stratford-Serial-ExtraBold;
+	font-weight:bold;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1096px) {
+	
+	.menupage1{
+		height:115vh;
+		width:100%;
+		align-items:center;
+	}
+	
+	.menupage1 .row{
+		align-content:center;
+	}
+	
+	
+
+	.menupage2{
+		height:100vh;
+		width:100%;
+	}
+	
+	.card{
+		width:150px;
+	}
+	
+	.card h5{
+		font-size:15px;
+	}
+	
+	.menupage1 h1{
+		font-size:20px;
+	}
+	
+	.hide01{
+		display:none;
+	}
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+ 
+	
+}
