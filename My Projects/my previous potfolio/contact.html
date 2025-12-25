@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Hanif</title>
+    <link href="style.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid d-flex justify-content-between">
+                <div>
+                <img src="logo.png" class="ms-5" height="80px" alt="">
+                <a class="navbar-brand fw-bold ms-2" href="#">Muhammad Hanif</a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div>
+            <h1>Contact</h1>
+        </div>
+
+        <form >
+            <fieldset>
+                <legend>Your Details</legend>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required placeholder="Example@gmail.com" >
+                
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" placeholder="0300-0000000" required>
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Your Message</legend>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required>
+        
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="5" cols="30" required></textarea>
+            </fieldset>
+            <button class="butt"> Submit</button>
+        </form>
+        
+    </main><br><hr><br>
+
+    <footer>
+        <p>Copyright 2025  All Rights are reserved</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
