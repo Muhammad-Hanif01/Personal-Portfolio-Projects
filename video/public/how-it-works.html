@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>How it Works - EduDownloader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container my-5">
+    <a href="index.html" class="btn btn-link">← Back to Demo</a>
+    <h2 class="mt-4">System Architecture</h2>
+    <hr>
+    
+    
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <h4>1. Frontend (Input)</h4>
+            <p>The user pastes a URL. JavaScript validates the format and sends a POST request to our Node.js server using the <code>fetch()</code> API.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>2. Backend (Processing)</h4>
+            <p>Express receives the URL. It checks for keywords like "youtube" or "tiktok" to determine the origin. In a real app, this is where complex scraping logic lives.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>3. Response (UI Update)</h4>
+            <p>The server sends back a JSON object. JavaScript parses this object and dynamically updates the HTML DOM to show the video details.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
